@@ -3,7 +3,7 @@ services:
     name: campuschat-api
     runtime: node
     rootDir: backend
-    buildCommand: npm install && npm run build && npx prisma migrate deploy
+    buildCommand: npm install && npm run build
     startCommand: npm run start
     healthCheckPath: /api/health
     envVars:

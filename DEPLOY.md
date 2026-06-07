@@ -42,8 +42,8 @@ git push -u origin main
 | `CLIENT_URL` | `https://YOUR-APP.vercel.app` (update after Step 3) |
 | `UPLOAD_DIR` | `./uploads` |
 
-5. **Build Command:** `npm install && npm run build && npx prisma migrate deploy`
-6. **Start Command:** `npm run start`
+5. **Build Command:** `npm install && npm run build`
+6. **Start Command:** `npm run start` (runs migrations automatically via `prestart`)
 7. Deploy → copy your public URL (e.g. `https://campuschat-production.up.railway.app`)
 
 Test: open `https://YOUR-RAILWAY-URL/api/health` — should return `{"status":"ok"}`
